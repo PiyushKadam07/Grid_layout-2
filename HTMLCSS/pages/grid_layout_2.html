@@ -1,0 +1,110 @@
+<!-- 279 -->
+<!DOCTYPE html>
+<html lang = "en">
+
+    <head>
+        <meta charset = "UTF-8">
+        <meta http-equiv = "X-UA-compatible"  content = "IE=edge">
+        <meta name = "viewport" content = "width=device-width, inital-scale=1.0">
+    </head>
+
+    <style>
+            body {
+                margin: 0;
+                padding: 0;
+            }
+
+            h3 {
+                color: #000000;
+                font-size: 15px;
+            }
+
+            .mainContainer {
+                height: 100vh;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                grid-template-rows: 0.2fr 1.5fr 1.2fr 0.8fr;
+                grid-gap: 5px;
+                grid-template-areas: 
+                "a a a a"
+                "b c c c"
+                "b d e f"
+                "b g g g";
+                border: 5px solid #ffffff;
+            }
+
+            #a{
+                background-color: #A7FFEB;
+                text-align: center;
+                grid-area: a;
+            }
+
+            #b {
+                background-color: #18FFFF;
+                text-align: center;
+                grid-area: b;
+            }
+
+            #c {
+                background-color: #84FFFF;
+                text-align: center;
+                grid-area: c;
+            }
+
+            #d {
+                background-color: #6FFFD2; 
+                text-align: center; 
+                grid-area: d;
+            }
+
+            #e {
+                background-color: #64FFDA; 
+                text-align: center; 
+                grid-area: e;
+            }
+
+            #f {
+                background-color: #73FFBA; 
+                text-align: center;
+                grid-area: f;
+            }
+
+            #g {
+                background-color: #1DE9B6; 
+                text-align: center;
+                grid-area: g;
+            }
+
+             @media only screen and (max-width: 500px) {
+            .mainContainer {
+                grid-template-columns: 1fr;
+                grid-template-rows:  0.2fr 1.5fr 1.2fr 0.8fr;
+                grid-template-areas: 
+                "a"
+                "b"
+                "c"
+                "d"
+                "e"
+                "f"
+                "g";
+            }
+
+            h3 {
+                font-size: 10px;
+            }
+        }
+    </style>
+
+    <body>
+        <div class = "mainContainer">
+            <div id = "a"><h3>NAVBAR</h3></div>
+            <div id = "b"><h3>SIDEBAR</h3></div>
+            <div id = "c"><h3>MAIN</h3></div>
+            <div id = "d"><h3>CONTENT1</h3></div>                
+            <div id = "e"><h3>CONTENT2</h3></div>
+            <div id = "f"><h3>CONTENT3</h3></div>
+            <div id = "g"><h3>FOOTER</h3></div> 
+        </div>
+    </body>
+
+</html>
